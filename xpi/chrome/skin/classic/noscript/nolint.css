@@ -14,11 +14,6 @@ window {
 }
 
 
-.code{
-	position: absolute;
-	width: 400px;
-	margin-bottom: -100px;  	
-}
 
 .codeBox{
 
@@ -27,11 +22,7 @@ window {
 	}
 
 
-#results{
-	position: absolute;
-	width: 400px;
 
-}
 
 #resultBox{
 	width: 350px;
