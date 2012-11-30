@@ -1,0 +1,42 @@
+/*** XUL demonstration ***/
+
+window {
+  -moz-box-align: start;
+  background-color: -moz-dialog;
+  font: -moz-dialog;
+  padding: 2em;
+  }
+
+
+.but{
+	color: red;
+		
+}
+
+
+.code{
+	position: absolute;
+	width: 400px;
+	margin-bottom: -100px;  	
+}
+
+.codeBox{
+
+	width: 420px;
+	height: 500px;
+	}
+
+
+#results{
+	position: absolute;
+	width: 400px;
+
+}
+
+#resultBox{
+	width: 350px;
+	height: 400px;
+	
+	
+}
+

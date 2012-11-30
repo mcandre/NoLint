@@ -1152,8 +1152,13 @@ return noscriptUtil.service ? {
     }
   },
   
-   runNoScript: function() {
-    alert("Run JSLint"); 
+   runNoScript: function() {    
+   window.open(
+      "chrome://noscript/content/" + "nsLintWindow.xul", 
+        "NoLint",
+      "chrome,width=900,height=600,centerscreen"); 
+   
+    
   },
   
   allowPage: function(permanent, justTell, sites) {

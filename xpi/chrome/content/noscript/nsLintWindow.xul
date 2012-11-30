@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="chrome://noscript/skin/nolint.css"?>
+<!DOCTYPE window>
+
+<window
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  title="NoLint"
+  onload="init();">
+
+<hbox>
+<vbox>
+<groupbox>
+  <caption label="Choose File"/>
+  <menulist id="fileList">
+  <menupopup>
+    <menuitem label="option 1" value="1"/>
+    <menuitem label="option 2" value="2"/>
+    <menuitem label="option 3" value="3"/>
+    <menuitem label="option 4" value="4"/>
+  </menupopup>
+  </menulist>
+  <button  class="but" label="Run" onclick="hello()"/>
+  
+</groupbox>
+
+
+
+	<groupbox id="results">
+	  <caption label="JSLint Results"/>
+	<textbox id="resultBox"/>
+	</groupbox>
+</vbox>
+	
+	<groupbox class="code">
+	  <caption label="Code View"/>
+	<textbox class="codeBox"/>
+	</groupbox>
+</hbox>
+
+<script type="application/javascript" src="nolint.js"/>
+
+
+
+</window>
