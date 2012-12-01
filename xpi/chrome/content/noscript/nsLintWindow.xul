@@ -49,6 +49,23 @@
 	</groupbox>
 </hbox>
 
+<hbox flex="1">
+	<groupbox class="options">
+	  <caption label="Options"/>
+	  
+	  <vbox>
+	  	<checkbox label="Enable JavaScript" checked="true"/>
+	  	<checkbox label="Enable Something" checked="false"/>
+	  </vbox>
+	  
+
+	</groupbox>
+
+</hbox>
+
+
+
+
 <script type="application/javascript" src="jquery.js"/>
 <script type="application/javascript" src="jslint.js"/>
 

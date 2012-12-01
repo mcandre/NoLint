@@ -18,7 +18,7 @@ window {
 #codeBox{
 
 	width: 420px;
-	height: 500px;
+	height: 150px;
 	}
 
 
@@ -26,8 +26,15 @@ window {
 
 #resultBox{
 	width: 350px;
-	height: 400px;
+	height: 395px;
 	
 	
 }
 
+.options{
+	
+	width: 835px;
+	height: 100px;
+
+	
+}

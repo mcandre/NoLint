@@ -1156,7 +1156,7 @@ return noscriptUtil.service ? {
    window.open(
       "chrome://noscript/content/" + "nsLintWindow.xul", 
         "NoLint",
-      "chrome,width=900,height=600,centerscreen"); 
+      "chrome,width=900,height=700,centerscreen"); 
    
     
   },
