@@ -4,6 +4,13 @@ function createDocument(html, title) {
   return doc
 }
 
+function createMenuItem(aLabel) {
+  const XUL_NS = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+  var item = document.createElementNS(XUL_NS, "menuitem"); // create a new XUL menuitem
+  item.setAttribute("label", aLabel);
+  return item;
+}
+
 function clear(){
 
 	
@@ -21,15 +28,22 @@ function init(){
     var currURL = currBrowser.currentURI.spec;
 	
 	var scripts = document.getElementsByTagName( 'script' );
-var thisScriptTag = scripts[ scripts.length - 1 ];
+	var thisScriptTag = scripts[ scripts.length - 1 ];
 
 
+	
+
+	
 	if("XMLHttpRequest" in window)
 		xmlhttp=new XMLHttpRequest();
 	if("ActiveXObject" in window)
 		xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
 
 	var source;
+
+	var popup = document.getElementById("fileList"); // a <menupopup> element
+	
+
 		
 	xmlhttp.open('GET',currURL,true);
 	xmlhttp.onreadystatechange=function() {
@@ -44,12 +58,20 @@ var thisScriptTag = scripts[ scripts.length - 1 ];
 		var div1 = document.getElementById('codeBox');
 		div1.setAttribute('value','alert("sdfsdf")');
 
+		for(var j=0;j<scripts.length;j++){
+			var last = createMenuItem(scripts[j].src);
+			
+			if(scripts[j].src == "")
+				popup.appendChild("JS Code Block "+j);
+			else
+				popup.appendChild(last);
 
-		$.get(scripts[5].src, function(data){
+			
+			
+		}
+				
 
-		
-		
-		if(data == null || data == undefined )
+		$.get(scripts[0].src, function(data){		
 			div1.setAttribute('value',data);
 
 				});
@@ -67,8 +89,14 @@ var thisScriptTag = scripts[ scripts.length - 1 ];
 
 function getfile(el){
     v = el.getAttribute("label")
+
+    var div1 = document.getElementById('codeBox');
+
+	$.get(v, function(data){		
+			div1.setAttribute('value',data);
+
+				});
 	
-	alert(v)
 	
 	
 }
