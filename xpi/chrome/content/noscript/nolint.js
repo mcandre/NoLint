@@ -89,7 +89,18 @@ function hello(){
            
            
   var elem=document.getElementById('resultBox');
-  elem.setAttribute('value',results.errors[0].reason);
+  
+  var allErrors="";
+  
+  for (var j=0;j<results.errors.length;j++){
+	  
+	  allErrors = allErrors + " "+ results.errors[j].line + ": "+ results.errors[j].reason + "\n";
+	  
+	  
+	  
+  }
+  
+  elem.setAttribute('value',allErrors );
 
            
            

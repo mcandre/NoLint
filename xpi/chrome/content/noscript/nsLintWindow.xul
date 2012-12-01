@@ -43,7 +43,7 @@
 
 	<groupbox class="code">
 	  <caption label="Code View"/>
-	  <textbox multiline="true" id="codeBox" flex="1">
+	  <textbox multiline="true" id="codeBox" readonly="true" flex="1">
 	     <scrollbar orient="vertical"/>
 	  </textbox>
 	</groupbox>
