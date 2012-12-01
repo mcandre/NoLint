@@ -12,7 +12,7 @@
 
 	<vbox flex="1">
 		<groupbox>
-		  <caption label="Choose File"/>
+		  <caption label="Choose JS File"/>
 		  <menulist id="fileList"  oncommand="getfile(event.target)">
 		  <menupopup >
 		   <menuitem label="-" value="0"/>
