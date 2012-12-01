@@ -5,15 +5,16 @@
 
 <window
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  title="NoLint">
+  title="NoLint"
+  onload="init()">
 
 <hbox flex="1">
 
 	<vbox flex="1">
 		<groupbox>
 		  <caption label="Choose File"/>
-		  <menulist id="fileList">
-		  <menupopup>
+		  <menulist id="fileList"  oncommand="getfile(event.target)">
+		  <menupopup >
 		   <menuitem label="-" value="0"/>
 		    <menuitem label="option 1" value="1"/>
 		    <menuitem label="option 2" value="2"/>
@@ -37,7 +38,7 @@
 
 	<groupbox class="code">
 	  <caption label="Code View"/>
-	  <textbox multiline="true" class="codeBox" flex="1">
+	  <textbox multiline="true" id="codeBox" flex="1">
 	     <scrollbar orient="vertical"/>
 	  </textbox>
 	</groupbox>

@@ -1,3 +1,20 @@
+function init(){
+	
+	
+	alert("Get all js files")
+	
+	
+}
+
+
+function getfile(el){
+    v = el.getAttribute("label")
+	
+	alert(v)
+	
+	
+}
+
 
 
 function hello(){
@@ -5,12 +22,20 @@ function hello(){
 	
     alert("Greate")
     
-  // Run JSLINT over code
-            JSLINT("alert('hels')");
+    var div1 = document.getElementById('codeBox');
+      div1.setAttribute('value','alert("sfsdf")');
+
+    var code = div1.getAttribute('value');
+  
+    		alert(code)
+            JSLINT(code);
             
             var results = JSLINT.data();
            
-           	alert(results.errors[0].reason);            
+           
+           var elem=document.getElementById('resultBox');
+  elem.setAttribute('value',results.errors[0].reason);
+
            
            
            }
