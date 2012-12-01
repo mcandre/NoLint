@@ -4,6 +4,14 @@ function createDocument(html, title) {
   return doc
 }
 
+function clear(){
+
+	
+	var elem=document.getElementById('resultBox');
+	elem.setAttribute('value','');
+
+
+}
 
 
 function init(){

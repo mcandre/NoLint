@@ -23,7 +23,12 @@
 		  </menupopup>
 		  </menulist>
 		  
+		  <hbox flex="1">
+
 		  <button  class="but" label="Run JSLint" onclick="hello()" flex="1" />	  
+		  <button  class="but" label="Clear" onclick="clear()" flex="1" />	  
+
+		  </hbox>
 		</groupbox>
 		
 		
