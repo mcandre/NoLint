@@ -1,5 +1,6 @@
 #NoLint
-######By Fred Schott, Robert Apelian, Louis Ellis, & Orkun Özbek
+__Tufts Comp150Bugs Final Project__  
+By Fred Schott, Robert Apelian, Louis Ellis, & Orkun Özbek
 
 NoLint is Mozilla Firefox static analysis plugin built off of the NoScript Firefox plugin. The NoScript plugin is something used to stop certain scripts from running, mainly used as a security tool. However, we’ve used the technology for ‘grabbing’ scripts and repurposed it to grab a chosen script running on a page and analyze the code as we will describe below.
 
